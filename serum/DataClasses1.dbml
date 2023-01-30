@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="convserum" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=convserum;Integrated Security=True" SettingsObjectName="serum.My.MySettings" SettingsPropertyName="convserumConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.conv_serum1" Method="conv_serum1">
+    <Parameter Name="visit_id" Type="System.Int32" DbType="Int" />
+    <Parameter Name="fname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="jname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="lname" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="dtp_dob" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="ftype" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="dtp_int" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="dtp_expected" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="conv_taken" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="cmb_ifno" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="txt_other" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="dtp_convserum" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="lbl_serum" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="dss" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="type" Type="System.Byte" DbType="TinyInt" />
+    <ElementType Name="conv_serum1Result">
+      <Column Name="visit_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="jname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="lname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dtp_dob" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ftype" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="dtp_int" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="dtp_expected" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="conv_taken" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="cmb_ifno" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="txt_other" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="dtp_convserum" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="lbl_serum" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dss" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
